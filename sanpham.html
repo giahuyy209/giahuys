@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - NEWMARSPORT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/z.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone"></i> 0123.456.789</span>
+                <span><i class="fas fa-envelope"></i> info@newmarsport.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> 123 Lê Lợi, Q.1, TP.HCM</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>NEWMARSPORT</h1>
+                <p class="slogan">Bạn cần tìm ...</p>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="san-pham.html" class="active">SẢN PHẨM</a></li>
+                <li><a href="gioi-thieu.html">GIỚI THIỆU</a></li>
+                <li><a href="lien-he.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h2 class="page-title">TẤT CẢ SẢN PHẨM</h2>
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> <span class="separator">/</span> <span class="current">Sản phẩm</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-left">
+                    <span class="result-count">Hiển thị <strong>12</strong> sản phẩm</span>
+                </div>
+                <div class="filter-right">
+                    <div class="sort-wrapper">
+                        <label for="sort">Sắp xếp:</label>
+                        <select id="sort" class="sort-select">
+                            <option>Mặc định</option>
+                            <option>Giá: Thấp đến cao</option>
+                            <option>Giá: Cao đến thấp</option>
+                            <option>Tên: A-Z</option>
+                            <option>Mới nhất</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="products-sidebar">
+                    <div class="filter-widget">
+                        <h3 class="filter-title">DANH MỤC</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="active">Tất cả sản phẩm <span>(48)</span></a></li>
+                            <li><a href="#">Giày chạy bộ <span>(12)</span></a></li>
+                            <li><a href="#">Giày tập gym <span>(8)</span></a></li>
+                            <li><a href="#">Sneaker <span>(15)</span></a></li>
+                            <li><a href="#">Giày lifestyle <span>(10)</span></a></li>
+                            <li><a href="#">Giày bóng đá <span>(3)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-widget">
+                        <h3 class="filter-title">THƯƠNG HIỆU</h3>
+                        <ul class="filter-list">
+                            <li><a href="#">Nike <span>(12)</span></a></li>
+                            <li><a href="#">Adidas <span>(10)</span></a></li>
+                            <li><a href="#">Puma <span>(8)</span></a></li>
+                            <li><a href="#">New Balance <span>(6)</span></a></li>
+                            <li><a href="#">Mizuno <span>(4)</span></a></li>
+                            <li><a href="#">Vans <span>(5)</span></a></li>
+                            <li><a href="#">Converse <span>(3)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-widget">
+                        <h3 class="filter-title">KHOẢNG GIÁ</h3>
+                        <ul class="filter-list">
+                            <li><a href="#">Dưới 1.000.000₫ <span>(8)</span></a></li>
+                            <li><a href="#">1.000.000₫ - 2.000.000₫ <span>(15)</span></a></li>
+                            <li><a href="#">2.000.000₫ - 3.000.000₫ <span>(12)</span></a></li>
+                            <li><a href="#">3.000.000₫ - 4.000.000₫ <span>(8)</span></a></li>
+                            <li><a href="#">Trên 4.000.000₫ <span>(5)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-widget">
+                        <h3 class="filter-title">KÍCH CỠ</h3>
+                        <div class="size-options">
+                            <span class="size-btn">35</span>
+                            <span class="size-btn">36</span>
+                            <span class="size-btn">37</span>
+                            <span class="size-btn">38</span>
+                            <span class="size-btn">39</span>
+                            <span class="size-btn">40</span>
+                            <span class="size-btn">41</span>
+                            <span class="size-btn">42</span>
+                            <span class="size-btn">43</span>
+                            <span class="size-btn">44</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-main">
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-badge">Hot</div>
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300" alt="Nike Air Max" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Nike Air Max 270</h3>
+                                <p class="product-price">
+                                    <span class="original-price">3.990.000₫</span>
+                                    3.290.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Nike Air Max 270')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-badge sale">-15%</div>
+                            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=300" alt="Adidas Ultraboost" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Adidas Ultraboost 22</h3>
+                                <p class="product-price">
+                                    <span class="original-price">3.790.000₫</span>
+                                    3.190.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Adidas Ultraboost 22')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=300" alt="New Balance" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">New Balance 574</h3>
+                                <p class="product-price">
+                                    <span class="original-price">2.590.000₫</span>
+                                    2.190.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('New Balance 574')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=300" alt="Vans Old Skool" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Vans Old Skool</h3>
+                                <p class="product-price">
+                                    <span class="original-price">1.990.000₫</span>
+                                    1.690.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Vans Old Skool')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?w=300" alt="Converse" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Converse Chuck 70</h3>
+                                <p class="product-price">
+                                    <span class="original-price">2.290.000₫</span>
+                                    1.990.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Converse Chuck 70')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1560769629-975e13f0c470?w=300" alt="Puma RS-X" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Puma RS-X Bold</h3>
+                                <p class="product-price">
+                                    <span class="original-price">2.990.000₫</span>
+                                    2.490.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Puma RS-X Bold')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=300" alt="Mizuno" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Mizuno Wave Rider</h3>
+                                <p class="product-price">
+                                    <span class="original-price">3.590.000₫</span>
+                                    2.990.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Mizuno Wave Rider')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=300" alt="Biti's" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Biti's Hunter Xplorer</h3>
+                                <p class="product-price">
+                                    <span class="original-price">1.290.000₫</span>
+                                    990.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Biti\'s Hunter')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product-card">
+                            <div class="product-badge">Hot</div>
+                            <img src="https://images.unsplash.com/photo-1597045566677-8cf032b6e47c?w=300" alt="Nike Air Force" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Nike Air Force 1 '07</h3>
+                                <p class="product-price">
+                                    <span class="original-price">2.890.000₫</span>
+                                    2.490.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Nike Air Force 1')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=300" alt="Adidas Stan Smith" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Adidas Stan Smith</h3>
+                                <p class="product-price">
+                                    <span class="original-price">2.290.000₫</span>
+                                    1.990.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Adidas Stan Smith')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 11 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1582582629778-8413f2457c0e?w=300" alt="Puma Suede" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Puma Suede Classic</h3>
+                                <p class="product-price">
+                                    <span class="original-price">1.990.000₫</span>
+                                    1.690.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('Puma Suede')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 12 -->
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1617112848921-0a5c8b7fe5a5?w=300" alt="New Balance" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">New Balance 327</h3>
+                                <p class="product-price">
+                                    <span class="original-price">2.390.000₫</span>
+                                    1.990.000₫
+                                </p>
+                                <button class="btn-buy" onclick="addToCart('New Balance 327')">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>NEWMARSPORT</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Đường Lê Lợi, Quận 1, TP.HCM</p>
+                    <p><i class="fas fa-phone"></i> Hotline: 0123.456.789</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@newmarsport.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>LIÊN KẾT</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="san-pham.html">Sản phẩm</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>CHÍNH SÁCH</h3>
+                    <ul>
+                        <li><a href="#">Bảo hành</a></li>
+                        <li><a href="#">Đổi trả</a></li>
+                        <li><a href="#">Vận chuyển</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>KẾT NỐI</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEWMARSPORT. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert('Đã thêm ' + productName + ' vào giỏ hàng!');
+        }
+    </script>
+</body>
+</html>
